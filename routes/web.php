@@ -11,6 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('treehouse');
+Route::get('/', 'AppController@index');
+
+Route::get('/community', function () {
+    return view('community');
+});
+
+
+Route::get('/library', function () {
+    return view('library');
+});
+
+
+Route::get('/tracks', function () {
+    return view('tracks');
+});
+
+Route::get('/support', function () {
+    return view('support');
 });
